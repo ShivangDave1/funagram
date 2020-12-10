@@ -1,27 +1,34 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Card = (props) => {
+
+  const { img, likes } = props.image
+
   return (
     <div className="card">
 
-      <img src={props.image} alt={''}/>
+      <img src={ img } alt={''}/>
 
       <span className="likes">
-        { 0 } likes
+        { likes } likes
       </span>
 
       <div className="buttons-list">
 
         <button className={"like"}>
-          <FontAwesomeIcon icon={"heart"} />
+          ♥️
         </button>
 
         <button className={"comment"}>
-          <FontAwesomeIcon icon={"comment"} />
+          ✍🏻
         </button>
 
         <button className={"share"}>
-          <FontAwesomeIcon icon={"share"} />
+          📤
+        </button>
+
+        <button className={"share"} onClick={() => console.log('delete this post')}>
+          ❌
         </button>
 
       </div>

@@ -9,8 +9,8 @@
   height: 80px;
   width: 100%;
 
-  font-size: 40px;
-  font-style: italic;
+  font-size: 60px;
+  font-family: 'Italianno', cursive;
 
   background-color: white;
 
@@ -81,6 +81,9 @@
 .likes {
   width: 100%;
   padding: 10px;
+
+  font-family: 'Italianno', cursive;
+  font-size: 25px;
 }
 
 .buttons-list {
